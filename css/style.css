@@ -259,28 +259,26 @@ samp, .mono { font-family: var(--font-mono); }
 
 .hero-social {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.7rem;
-  padding: 0.8rem var(--pad);
+  justify-content: flex-start;
+  gap: 1.3rem;
+  padding: 0.9rem var(--pad);
   border-top: 1px solid var(--line);
   background: rgba(10, 10, 10, 0.6);
 }
 
 .social-link {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid var(--line);
   color: var(--fg);
-  transition: color 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;
+  transition: color 160ms ease-out, transform 160ms ease-out;
 }
-.social-link svg { width: 17px; height: 17px; fill: currentColor; }
+.social-link svg { width: 26px; height: 26px; fill: currentColor; }
 .social-link:hover {
   color: var(--red);
-  border-color: var(--red);
-  background: rgba(255, 42, 42, 0.08);
+  transform: scale(1.12);
 }
 
 .hero-spec-grid {
