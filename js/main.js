@@ -51,7 +51,7 @@ mm.add(
         stagger: 0.07,
         ease: "power2.out",
       }, "-=0.55")
-      .from(".hero-thesis, .hero-scroll", {
+      .from(".hero-scroll", {
         autoAlpha: 0,
         y: 10,
         duration: 0.6,

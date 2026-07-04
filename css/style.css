@@ -295,16 +295,9 @@ samp, .mono { font-family: var(--font-mono); }
   margin-top: auto;
   display: flex;
   align-items: flex-end;
-  justify-content: space-between;
+  justify-content: flex-end;
   gap: 2rem;
   padding: clamp(1.5rem, 4vh, 3rem) var(--pad);
-}
-
-.hero-thesis {
-  max-width: 34rem;
-  font-size: clamp(1rem, 1.4vw, 1.2rem);
-  line-height: 1.65;
-  color: var(--fg);
 }
 
 .hero-scroll {
