@@ -29,7 +29,7 @@ mm.add(
 
     if (reduceMotion) {
       // Everything visible, nothing moves.
-      gsap.set(".reveal, .hero-word, .spec-cell, .hero-thesis, .hero-meta-row", {
+      gsap.set(".reveal, .hero-word, .spec-cell, .hero-thesis, .hero-meta-row, .social-link", {
         clearProps: "all",
       });
       return;
@@ -56,7 +56,14 @@ mm.add(
         y: 10,
         duration: 0.6,
         ease: "power2.out",
-      }, "-=0.3");
+      }, "-=0.3")
+      .from(".social-link", {
+        autoAlpha: 0,
+        y: 10,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: "power2.out",
+      }, "-=0.35");
 
     /* ---- Hero portrait: settle zoom on load, flicker the HUD frame ---- */
     gsap.from(".hero-bg img", {

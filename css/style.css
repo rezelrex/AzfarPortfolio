@@ -257,6 +257,32 @@ samp, .mono { font-family: var(--font-mono); }
 .hero-word { display: inline-block; }
 .hero-line-2 { text-align: right; }
 
+.hero-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  padding: 0.8rem var(--pad);
+  border-top: 1px solid var(--line);
+  background: rgba(10, 10, 10, 0.6);
+}
+
+.social-link {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--line);
+  color: var(--fg);
+  transition: color 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;
+}
+.social-link svg { width: 17px; height: 17px; fill: currentColor; }
+.social-link:hover {
+  color: var(--red);
+  border-color: var(--red);
+  background: rgba(255, 42, 42, 0.08);
+}
+
 .hero-spec-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -408,6 +434,8 @@ samp, .mono { font-family: var(--font-mono); }
 .data-row:last-child { border-bottom: none; }
 .data-row span { color: var(--fg-dim); }
 .data-row samp { font-weight: 600; text-align: right; }
+.data-row a { transition: color 160ms ease-out; }
+.data-row a:hover samp { color: var(--red); }
 
 /* ============ CASE FILES ============ */
 
