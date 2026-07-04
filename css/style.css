@@ -260,22 +260,20 @@ samp, .mono { font-family: var(--font-mono); }
 .hero-social {
   display: flex;
   justify-content: flex-start;
-  gap: 1.3rem;
+  gap: 1.4rem;
   padding: 0.9rem var(--pad);
-  border-top: 1px solid var(--line);
-  background: rgba(10, 10, 10, 0.6);
 }
 
 .social-link {
-  width: 44px;
-  height: 44px;
+  width: 48px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: var(--fg);
   transition: color 160ms ease-out, transform 160ms ease-out;
 }
-.social-link svg { width: 26px; height: 26px; fill: currentColor; }
+.social-link svg { width: 34px; height: 34px; fill: currentColor; }
 .social-link:hover {
   color: var(--red);
   transform: scale(1.12);
