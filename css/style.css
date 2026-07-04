@@ -247,7 +247,9 @@ samp, .mono { font-family: var(--font-mono); }
   line-height: 0.88;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  padding: clamp(1.5rem, 4vh, 3.5rem) var(--pad) 0;
+  padding: 0 var(--pad);
+  /* auto margins center the name in the space between meta row and scroll cue */
+  margin: auto 0;
   user-select: none;
 }
 
@@ -262,7 +264,6 @@ samp, .mono { font-family: var(--font-mono); }
   background: var(--line);
   border-top: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
-  margin-top: clamp(1.5rem, 4vh, 3.5rem);
 }
 
 .spec-cell {
@@ -292,12 +293,11 @@ samp, .mono { font-family: var(--font-mono); }
 .barcode { width: 100%; max-width: 150px; height: 30px; fill: var(--fg); }
 
 .hero-bottom {
-  margin-top: auto;
   display: flex;
   align-items: flex-end;
   justify-content: flex-end;
   gap: 2rem;
-  padding: clamp(1.5rem, 4vh, 3rem) var(--pad);
+  padding: 0 var(--pad) 1.2rem;
 }
 
 .hero-scroll {
