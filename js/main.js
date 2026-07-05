@@ -103,10 +103,11 @@ mm.add(
       },
     });
 
-    /* ---- Marquee: continuous conveyor ---- */
+    /* ---- Marquee: continuous conveyor (faster loop on narrow screens,
+       since the smaller mobile type would otherwise take too long to read) ---- */
     gsap.to(".marquee-track", {
       xPercent: -50,
-      duration: 22,
+      duration: window.innerWidth <= 600 ? 11 : 22,
       ease: "none",
       repeat: -1,
     });
