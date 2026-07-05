@@ -119,6 +119,14 @@ samp, .mono { font-family: var(--font-mono); }
 .topbar .nav a { padding: 0.2rem 0; color: var(--fg-dim); transition: color 160ms ease-out; }
 .topbar .nav a:hover { color: var(--red); }
 
+/* back-link cell (used only on the rezlsg.agency-embedded copy) */
+.back-link {
+  color: var(--fg-dim);
+  transition: color 160ms ease-out;
+  white-space: nowrap;
+}
+.back-link:hover { color: var(--red); }
+
 /* ============ HERO ============ */
 
 .hero {
